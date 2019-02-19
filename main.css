@@ -1,0 +1,24 @@
+.top-bar {
+    width: 100%;
+    height: 8vh;
+    background: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    font-size: 2em;
+    padding-left: 20px;
+}
+
+.top-bar, #header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#header {
+    background: #92069d;
+    width: 21vw;
+    height: 100%;
+    text-align: center;
+}
