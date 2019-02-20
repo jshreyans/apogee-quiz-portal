@@ -5,8 +5,12 @@
 body {
     padding: 0;
     margin: 0;
-    font-family: "ASans", sans-serif;
     height: 100vh;
     width: 100vw;
     position: relative;
+    background: #f1f1f1;
+}
+
+body, html {
+    font-family: sans-serif;
 }
