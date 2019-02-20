@@ -112,7 +112,7 @@
     clear: both;
     content: "";
     width: 100%;
-    display: flex; 
+    display: flex;
     flex-wrap: wrap;
     display: flex;
     height:fit-content;
@@ -125,15 +125,50 @@
     width: 60px;
     border-radius: 1px;
     margin: 8px; 
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
 }
 .question-wrapper .indicators{ 
-    height: 60px;
-    background: white;
-    width: 60px;
+    height: fit-content;
+    width: fit-content;
     margin: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.question-wrapper .indicators:nth-child(4n), .indicators:nth-child(5n){
+    flex-direction: row;
+}
+.items{
+    height: 60px;
+    width: 60px;
     border-radius: 10px;
 }
 .attempted{
--webkit-clip-path: polygon(100% 100%, 100% 36%, 51% 0%, 0 36%, 0 100%, 46% 100%);
-clip-path: polygon(100% 100%, 100% 36%, 51% 0%, 0 36%, 0 100%, 46% 100%);
+    -webkit-clip-path: polygon(100% 100%, 100% 36%, 51% 0%, 0 36%, 0 100%, 46% 100%);
+    clip-path: polygon(100% 100%, 100% 36%, 51% 0%, 0 36%, 0 100%, 46% 100%);
+    background: blue;
+    margin-bottom: 5px;
+}
+.not-attempted{
+    -webkit-clip-path: polygon(100% 69%, 100% 0, 51% 0%, 0 0, 0 68%, 48% 100%);
+    clip-path: polygon(100% 69%, 100% 0, 51% 0%, 0 0, 0 68%, 48% 100%);
+    background: red;
+    margin-bottom: 5px;
+}
+.to-be-reviewed{
+    border-radius: 50%;
+    background: purple;
+    margin-bottom: 5px;
+}
+.not-reviewed-yet{
+    border-radius: 50%;
+    background: grey;
+    margin-right: 5px;
+}
+.attempt-mfr{
+    border-radius: 50%;
+    background: gold;
+    margin-right: 5px;
 }

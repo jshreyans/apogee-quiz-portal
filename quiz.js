@@ -6,7 +6,7 @@ function questionDisplay(content){
     questionsContainer.appendChild(newElement);
 }
 
-var numOfQuestions = 10;
+var numOfQuestions = 20;
 for(var i= 1; i<=numOfQuestions ; i++){
     questionDisplay(i);
 }
