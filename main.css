@@ -11,32 +11,32 @@
     box-shadow: 0px 1px 20px 0px black;
 }
 
-.top-bar, .event-title, .wrapper, .question-header, .user-area-header {
+.top-bar, .event-title, .wrapper, .question-header, .user-area-header, .quit-button {
     display: flex;
 }
 
-.event-title, .user-area-header, .question-header {
+.event-title, .user-area-header, .question-header, .quit-button {
     align-items: center;
 }
 
 .event-title {
     height: 100%;
-    width: 420px;
+    width: 450px;
     background: #92069d;
-    font-weight: 900;
     padding-left: 10px;
     border-right: 25px solid #70067b;
     border-left: 5px solid #70067b;
+    font-family: "Mont-bold", sans-serif;
 }
 
 .quit-button {
     width: 130px;
     height: 100%;
-    text-align: center;
-    font-size: 1.5em;
+    font-size: 1em;
     color: #fff;
     position: absolute;
     right: 10px;
+    justify-content: center;
     /* margin-left: 50vw; */
 }
 
