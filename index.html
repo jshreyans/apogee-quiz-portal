@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="frame.css">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./css/frame.css">
+    <link rel="stylesheet" href="./css/main.css">
     <title>Quiz-Portal</title>
 </head>
 <body>
@@ -24,6 +24,7 @@
                     <span id="incorrect">INCORRECT:  </span>
                     <span id="unattempted">UNATTEMPTED:  </span>
                 </div>
+                <div class="ham"></div>
             </div>
             <div class="user-footer">
                 <div class="footer-buttons">
@@ -52,7 +53,10 @@
             </div>
         </div>
         <div class="question-wrapper">
-            <div class="question-header">QUESTIONS</div>
+            <div class="question-header"> 
+                <span id="question-icon"></span>
+                <span>QUESTIONS</span> 
+            </div>
             <div class="questions-container"></div>
             <div class="questions-indicator">
                 <div class="indicators"><div class="items attempted"></div>Attempted</div>
