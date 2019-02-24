@@ -13,18 +13,18 @@ body {
 
 @font-face {
     font-family: Mont;
-    src: url('./fonts/Montserrat/Montserrat-Medium.ttf');
+    src: url('../fonts/Montserrat/Montserrat-Medium.ttf');
 }
 
 @font-face {
     font-family: Mont-bold;
-    src: url('./fonts/Montserrat/Montserrat-Bold.ttf');
+    src: url('../fonts/Montserrat/Montserrat-Bold.ttf');
     font-weight: 900;
 }
 
 @font-face {
     font-family: Mont-thin;
-    src: url('./fonts/Montserrat/Montserrat-Light.ttf');
+    src: url('../fonts/Montserrat/Montserrat-Light.ttf');
     font-weight: 100;
 }
 
