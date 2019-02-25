@@ -103,6 +103,10 @@ setInterval(function(){
 //     minutesLeft -=1;
 //     timer.innerHTML = `${minutesLeft} : ${secondsLeft}`;
 // },60000);
+const nav = document.querySelector(".nav-menu");
+
+document.querySelector(".ham").addEventListener("click", () => {nav.style.left = "0"});
+document.querySelector("#close-nav").addEventListener("click", () => {nav.style.left = "-100%"});
 
 // function XML_HTTP(){
 //     var input = document.querySelector("input").value;
