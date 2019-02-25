@@ -91,8 +91,8 @@
 
 .ham {
     background: url('../icons/menu.png');
-    height: 30px;
-    width: 30px;
+    height: 35px;
+    width: 35px;
     background-size: cover;
     position: absolute;
     right: 20px;

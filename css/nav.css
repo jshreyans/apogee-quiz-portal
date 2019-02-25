@@ -1,24 +1,37 @@
 .nav-menu {
-    position: absolute;
-    left: -100%;
-    /* opacity: 0.8; */
     display: none;
-    width: 100%;
-    background: #ddd;
-    height: 100%;
-    transition: 0.3s ease;
-}
-
-#close-nav {
-    background: url('../icons/cancel.png');
-    background-size: cover;
-    height: 30px;
-    width: 30px;
-    margin-left: 30px;
 }
 
 @media all and (max-width: 400px) {
     .nav-menu {
+        left: -100%;
+        width: 100%;
+        background: #ddd;
+        height: 100%;
+        transition: 0.3s ease;
+        position: absolute;
+        display: block;
+    }  
+    
+    #close-nav {
+        position: absolute;
+        background: url('../icons/cancel.png');
+        background-size: cover;
+        height: 40px;
+        width: 40px;
+        margin-left: calc(100% - 55px);
+        margin-top: 13px;
+    }
+    
+    #nav-marking {
+        margin-top: 13px;
+        font-size: 1em;
         display: flex;
+        flex-direction: column;
+        border-bottom: 2px solid rgb(194, 192, 192);
+    }
+    #nav-marking > span {
+        padding-bottom: 10px;
+        padding-left: 10px;
     }
 }
