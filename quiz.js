@@ -85,6 +85,25 @@ for(var i= 1; i<=numOfQuestions ; i++){
     questionDisplay(i);
 }
 
+var maxtime_min = 30;
+var timer= document.getElementById("timer");
+var minutesLeft = maxtime_min;
+var secondsLeft = 0;
+timer.innerHTML = `${minutesLeft} : ${secondsLeft}`;
+
+setInterval(function(){
+    if(secondsLeft == 0){
+        minutesLeft -= 1;
+        secondsLeft = 60;
+    }
+    secondsLeft-=1;
+    timer.innerHTML = `${minutesLeft} : ${secondsLeft}`;
+},1000);
+// setInterval(function(){
+//     minutesLeft -=1;
+//     timer.innerHTML = `${minutesLeft} : ${secondsLeft}`;
+// },60000);
+
 // function XML_HTTP(){
 //     var input = document.querySelector("input").value;
 //     var request = new XMLHttpRequest();

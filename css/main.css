@@ -313,3 +313,15 @@
 .indicator-border{
     border: 2px solid black;
 }
+.question-wrapper #timer{
+    clear: both;
+    width: 100%;
+    display: flex; 
+    flex-wrap: wrap;
+    display: flex;
+    height:fit-content;
+    background-color: palegreen;
+    font-size: 50px;
+    margin-top: 8px;
+    justify-content: space-around; 
+}
