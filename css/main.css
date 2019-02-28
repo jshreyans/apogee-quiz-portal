@@ -327,3 +327,53 @@
     margin-top: 8px;
     justify-content: space-around; 
 }
+
+ .instructions-page {
+     height: 100vh;
+     width: 100vw;
+     background: rgba(221,221,221,0.95);
+     position: relative;
+     display: flex;
+     flex-direction: column;
+     z-index: 10;
+ }
+
+ .instructions-header {
+     /* position: absolute; */
+     /* top: 0; */
+     width: 100%;
+     height: 80px;
+     background: #92069d;
+     color: #fff;
+     font-size: 2.5em;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+.instructions-body {
+    /* position: absolute; */
+    /* top: 100px; */
+    margin-top: 50px;
+    width: 100%;
+    padding: 0 40px;
+    font-size: 1.3em;
+}
+
+.start-button {
+    /* position: absolute; */
+    /* top:  */
+    margin-top: 100px;
+    margin-left: calc(50% - 100px);
+    width: 200px;
+    height: 70px;
+    background: #0920ed;
+    color: #fff;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-button:hover {cursor: pointer}
+.start-button:active {border: 4px solid #fff}

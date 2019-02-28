@@ -85,28 +85,48 @@ for(var i= 1; i<=numOfQuestions ; i++){
     questionDisplay(i);
 }
 
+// ------------------ Timer Code --------------------
 var maxtime_min = 30;
 var timer= document.getElementById("timer");
 var minutesLeft = maxtime_min;
 var secondsLeft = 0;
 timer.innerHTML = `${minutesLeft} : ${secondsLeft}`;
 
-setInterval(function(){
-    if(secondsLeft == 0){
-        minutesLeft -= 1;
-        secondsLeft = 60;
-    }
-    secondsLeft-=1;
-    timer.innerHTML = `${minutesLeft} : ${secondsLeft}`;
-},1000);
-// setInterval(function(){
-//     minutesLeft -=1;
-//     timer.innerHTML = `${minutesLeft} : ${secondsLeft}`;
-// },60000);
+// function startTimer() {
+//     setInterval(function(){
+//         if(secondsLeft == 0){
+//             minutesLeft -= 1;
+//             secondsLeft = 60;
+//         }
+//         secondsLeft-=1;
+//         timer.innerHTML = `${minutesLeft} : ${secondsLeft}`;
+//     },1000);
+//     console.log('Timer called');
+    // setInterval(function(){
+    //     minutesLeft -=1;
+    //     timer.innerHTML = `${minutesLeft} : ${secondsLeft}`;
+    // },60000);
+//}
+document.querySelector(".start-button").addEventListener("click", function() {
+    setInterval(function(){
+        if(secondsLeft == 0){
+            minutesLeft -= 1;
+            secondsLeft = 60;
+        }
+        secondsLeft-=1;
+        timer.innerHTML = `${minutesLeft} : ${secondsLeft}`;
+    },1000);
+    console.log("Timer called on click");
+});
+
+document.querySelector(".start-button").addEventListener("click", function() {
+    document.querySelector(".instructions-page").style.display = "none";
+})
+
 const nav = document.querySelector(".nav-menu");
 
-document.querySelector(".ham").addEventListener("click", () => {nav.style.left = "0"});
-document.querySelector("#close-nav").addEventListener("click", () => {nav.style.left = "-100%"});
+// document.querySelector(".ham").addEventListener("click", () => {nav.style.left = "0"});
+// document.querySelector("#close-nav").addEventListener("click", () => {nav.style.left = "-100%"});
 
 // function XML_HTTP(){
 //     var input = document.querySelector("input").value;
