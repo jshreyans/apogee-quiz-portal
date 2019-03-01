@@ -92,21 +92,6 @@ var minutesLeft = maxtime_min;
 var secondsLeft = 0;
 timer.innerHTML = `${minutesLeft} : ${secondsLeft}`;
 
-// function startTimer() {
-//     setInterval(function(){
-//         if(secondsLeft == 0){
-//             minutesLeft -= 1;
-//             secondsLeft = 60;
-//         }
-//         secondsLeft-=1;
-//         timer.innerHTML = `${minutesLeft} : ${secondsLeft}`;
-//     },1000);
-//     console.log('Timer called');
-    // setInterval(function(){
-    //     minutesLeft -=1;
-    //     timer.innerHTML = `${minutesLeft} : ${secondsLeft}`;
-    // },60000);
-//}
 document.querySelector(".start-button").addEventListener("click", function() {
     setInterval(function(){
         if(secondsLeft == 0){
