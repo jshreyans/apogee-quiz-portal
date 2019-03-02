@@ -2,7 +2,7 @@
     display: none;
 }
 
-@media all and (max-width: 400px) {
+@media all and (max-width: 450px) {
     .nav-menu {
         display: block;
         position: absolute;
