@@ -1,4 +1,26 @@
 var currentSelected = 0; 
+
+// ------------------ Timer Code --------------------
+var maxtime_min = 30;
+var timer= document.getElementById("timer");
+var minutesLeft = maxtime_min;
+var secondsLeft = 0;
+timer.innerHTML = `${minutesLeft} : ${secondsLeft}`;
+
+document.querySelector(".start-button").addEventListener("click", function() {
+    setInterval(function(){
+        if(secondsLeft == 0){
+            minutesLeft -= 1;
+            secondsLeft = 60;
+        }
+        secondsLeft-=1;
+        timer.innerHTML = `${minutesLeft} : ${secondsLeft}`;
+    },1000);
+    console.log("Timer called on click");
+    startquiz();
+});
+// ---------------------------------------------------
+
 function getText(element){
     var text = element.innerText;
     return text;
@@ -85,25 +107,6 @@ for(var i= 1; i<=numOfQuestions ; i++){
     questionDisplay(i);
 }
 
-// ------------------ Timer Code --------------------
-var maxtime_min = 30;
-var timer= document.getElementById("timer");
-var minutesLeft = maxtime_min;
-var secondsLeft = 0;
-timer.innerHTML = `${minutesLeft} : ${secondsLeft}`;
-
-document.querySelector(".start-button").addEventListener("click", function() {
-    setInterval(function(){
-        if(secondsLeft == 0){
-            minutesLeft -= 1;
-            secondsLeft = 60;
-        }
-        secondsLeft-=1;
-        timer.innerHTML = `${minutesLeft} : ${secondsLeft}`;
-    },1000);
-    console.log("Timer called on click");
-});
-
 document.querySelector(".start-button").addEventListener("click", function() {
     document.querySelector(".instructions-page").style.display = "none";
 })
@@ -112,20 +115,3 @@ const nav = document.querySelector(".nav-menu");
 
 // document.querySelector(".ham").addEventListener("click", () => {nav.style.left = "0"});
 // document.querySelector("#close-nav").addEventListener("click", () => {nav.style.left = "-100%"});
-
-// function XML_HTTP(){
-//     var input = document.querySelector("input").value;
-//     var request = new XMLHttpRequest();
-//     request.open('GET', `https://api.github.com/users/${input}`, true);
-    
-//     request.onload = function () {
-//         var data = JSON.parse(this.response);
-//         if (request.status >= 200 && request.status < 400) {
-//             represent_data(data);
-//         } else {
-//             console.log('error');
-//         }
-//     }
-//     request.send();
-    
-//     }
