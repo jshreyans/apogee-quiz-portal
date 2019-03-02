@@ -7,18 +7,18 @@ var minutesLeft = maxtime_min;
 var secondsLeft = 0;
 timer.innerHTML = `${minutesLeft} : ${secondsLeft}`;
 
-document.querySelector(".start-button").addEventListener("click", function() {
-    setInterval(function(){
-        if(secondsLeft == 0){
-            minutesLeft -= 1;
-            secondsLeft = 60;
-        }
-        secondsLeft-=1;
-        timer.innerHTML = `${minutesLeft} : ${secondsLeft}`;
-    },1000);
-    console.log("Timer called on click");
-    startquiz();
-});
+// document.querySelector(".start-button").addEventListener("click", function() {
+//     setInterval(function(){
+//         if(secondsLeft == 0){
+//             minutesLeft -= 1;
+//             secondsLeft = 60;
+//         }
+//         secondsLeft-=1;
+//         timer.innerHTML = `${minutesLeft} : ${secondsLeft}`;
+//     },1000);
+//     console.log("Timer called on click");
+//     startquiz();
+// });
 // ---------------------------------------------------
 
 function getText(element){
@@ -107,11 +107,11 @@ for(var i= 1; i<=numOfQuestions ; i++){
     questionDisplay(i);
 }
 
-document.querySelector(".start-button").addEventListener("click", function() {
-    document.querySelector(".instructions-page").style.display = "none";
-})
+// document.querySelector(".start-button").addEventListener("click", function() {
+//     document.querySelector(".instructions-page").style.display = "none";
+// })
 
 const nav = document.querySelector(".nav-menu");
 
-// document.querySelector(".ham").addEventListener("click", () => {nav.style.left = "0"});
-// document.querySelector("#close-nav").addEventListener("click", () => {nav.style.left = "-100%"});
+document.querySelector(".ham").addEventListener("click", () => {nav.style.left = "0"});
+document.querySelector("#close-nav").addEventListener("click", () => {nav.style.left = "-100%"});
