@@ -111,7 +111,10 @@ for(var i= 1; i<=numOfQuestions ; i++){
 //     document.querySelector(".instructions-page").style.display = "none";
 // })
 
+// ----------------  Ham menu handler  --------------------
 const nav = document.querySelector(".nav-menu");
 
 document.querySelector(".ham").addEventListener("click", () => {nav.style.left = "0"});
 document.querySelector("#close-nav").addEventListener("click", () => {nav.style.left = "-100%"});
+
+// --------------------------------------------------------
