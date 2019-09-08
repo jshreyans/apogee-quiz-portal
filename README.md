@@ -1,5 +1,4 @@
-# apogee-quiz-portal
-### Quiz Portal for APOGEE'19 (Reverse Engineering)
+## Reverse Enginerring (APOGEE'19)
 
-Hosted at [quiz-portal](https://jshreyans551.github.io/apogee-quiz-portal/index.html)
-### This is only a static version. The application has been integrated with a Django backend here [APOGEE-Quiz](https://github.com/dush-t/DVMquizbuilder)
+Frontend for the quizzing portal used by various academic associations to conduct a variety of quizzes.
+#### This is only a static version. The application has been integrated with a Django backend here [APOGEE-Quiz](https://github.com/dush-t/DVMquizbuilder)
